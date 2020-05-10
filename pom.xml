@@ -41,6 +41,13 @@
     </dependency>
     <!-- springframe end -->
     
+    <!-- XML里配置包扫描时用到了aspect -->
+    <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>1.8.9</version>
+    </dependency>
+    
   </dependencies>
   
 </project>
