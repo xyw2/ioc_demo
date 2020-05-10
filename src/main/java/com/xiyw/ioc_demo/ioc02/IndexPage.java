@@ -1,4 +1,4 @@
-package com.xiyw.ios_demo.ioc02;
+package com.xiyw.ioc_demo.ioc02;
 
 public class IndexPage {
 	

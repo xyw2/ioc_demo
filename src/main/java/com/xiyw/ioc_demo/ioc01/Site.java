@@ -1,17 +1,12 @@
-package com.xiyw.ios_demo.ioc02;
+package com.xiyw.ioc_demo.ioc01;
 
 public class Site {
 
-	private IndexPage indexPage;
-	
-	public Site(IndexPage indexPage){
-		this.indexPage = indexPage;
-	}
+	private IndexPage indexPage = new IndexPage();
 	
 	public void setIndex(){
 		System.out.println("Site setIndex method");
 		String out = indexPage.getPageIndex(7);
 		System.out.println(out);
 	}
-
 }

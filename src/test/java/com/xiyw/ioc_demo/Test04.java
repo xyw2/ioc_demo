@@ -1,13 +1,13 @@
-package com.xiyw.ios_demo;
+package com.xiyw.ioc_demo;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.xiyw.ios_demo.ioc04.BeanDefined;
-import com.xiyw.ios_demo.ioc04.BeanFactory;
-import com.xiyw.ios_demo.ioc04.Site;
+import com.xiyw.ioc_demo.ioc04.BeanDefined;
+import com.xiyw.ioc_demo.ioc04.BeanFactory;
+import com.xiyw.ioc_demo.ioc04.Site;
 
 public class Test04 {
 
@@ -19,14 +19,14 @@ public class Test04 {
 		//bean的注册
 		BeanDefined indexPage = new BeanDefined();
 		indexPage.setBeanId("indexPage");
-		indexPage.setBeanClassPath("main.java.ioc04.IndexPage");
+		indexPage.setBeanClassPath("com.xiyw.ioc_demo.ioc04.IndexPage");
 		Map<String,String> indexPagePropertyMap = new HashMap<String,String>();
 		indexPagePropertyMap.put("pageNum", "99");
 		indexPage.setPropertyMap(indexPagePropertyMap);
 		
 		BeanDefined site = new BeanDefined();
 		site.setBeanId("site");
-		site.setBeanClassPath("main.java.ioc04.Site");
+		site.setBeanClassPath("com.xiyw.ioc_demo.ioc04.Site");
 		
 		Map<String,String> sitePropertyMap = new HashMap<String,String>();
 		sitePropertyMap.put("homeUrl", "127.0.0.1/index.html");

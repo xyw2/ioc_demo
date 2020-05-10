@@ -1,4 +1,4 @@
-package com.xiyw.ios_demo.ioc03;
+package com.xiyw.ioc_demo.ioc03;
 
 import java.util.List;
 

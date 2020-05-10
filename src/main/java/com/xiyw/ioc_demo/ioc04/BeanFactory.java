@@ -1,4 +1,4 @@
-package com.xiyw.ios_demo.ioc04;
+package com.xiyw.ioc_demo.ioc04;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

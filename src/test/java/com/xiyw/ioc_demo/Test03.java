@@ -1,11 +1,12 @@
-package com.xiyw.ios_demo;
+package com.xiyw.ioc_demo;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.xiyw.ios_demo.ioc03.BeanDefined;
-import com.xiyw.ios_demo.ioc03.BeanFactory;
-import com.xiyw.ios_demo.ioc03.IndexPage;
+import com.xiyw.ioc_demo.ioc03.BeanDefined;
+import com.xiyw.ioc_demo.ioc03.BeanFactory;
+import com.xiyw.ioc_demo.ioc03.IndexPage;
+import com.xiyw.ioc_demo.ioc03.Site;
 
 public class Test03 {
 
@@ -17,11 +18,11 @@ public class Test03 {
 		//bean的注册
 		BeanDefined indexPage = new BeanDefined();
 		indexPage.setBeanId("indexPage");
-		indexPage.setBeanClassPath("main.java.ioc03.IndexPage");
+		indexPage.setBeanClassPath("com.xiyw.ioc_demo.ioc03.IndexPage");
 		
 		BeanDefined site = new BeanDefined();
 		site.setBeanId("site");
-		site.setBeanClassPath("main.java.ioc03.Site");
+		site.setBeanClassPath("com.xiyw.ioc_demo.ioc03.Site");
 		
 		List<BeanDefined> beanDefinedList = new ArrayList<BeanDefined>();
 		beanDefinedList.add(indexPage);
@@ -34,6 +35,8 @@ public class Test03 {
 		//需要时向bean容器索要对象
 		IndexPage page =  (IndexPage)beanFactory.getBean("indexPage");
 		System.out.println(page);
+		Site site1 =  (Site)beanFactory.getBean("site");
+		System.out.println(site1);
 	}
 
 }

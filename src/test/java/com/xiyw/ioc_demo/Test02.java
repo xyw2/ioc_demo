@@ -1,7 +1,7 @@
-package com.xiyw.ios_demo;
+package com.xiyw.ioc_demo;
 
-import com.xiyw.ios_demo.ioc02.IndexPage;
-import com.xiyw.ios_demo.ioc02.Site;
+import com.xiyw.ioc_demo.ioc02.IndexPage;
+import com.xiyw.ioc_demo.ioc02.Site;
 
 public class Test02 {
 
