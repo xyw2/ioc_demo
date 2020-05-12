@@ -9,6 +9,7 @@
         http://www.springframework.org/schema/context/spring-context-4.3.xsd">
         
     <bean id="bookDao" class="com.xiyw.ioc_demo.ioc05.BookDao" scope="singleton"></bean>
+    
     <bean id="teacher" class="com.xiyw.ioc_demo.ioc06.Teacher">
     	<constructor-arg name="name" value="张老师"></constructor-arg>
     	<constructor-arg name="sex" value="female"></constructor-arg>
@@ -24,8 +25,11 @@
     	<property name="teacher" ref="teacher"></property>
     </bean>
     
-    <context:component-scan base-package="com.xiyw.ioc_demo">
+    <!--  <context:component-scan base-package="com.xiyw.ioc_demo">
     	<context:exclude-filter type="aspectj" expression="com.xiyw.ioc_demo.ioc08.*"/>
     	<context:exclude-filter type="aspectj" expression="com.xiyw.ioc_demo.ioc09.*"/>
+    </context:component-scan>
+    -->
+    <context:component-scan base-package="com.xiyw.ioc_demo.ioc07">
     </context:component-scan>
 </beans>

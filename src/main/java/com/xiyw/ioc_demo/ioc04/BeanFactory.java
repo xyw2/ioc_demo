@@ -57,7 +57,6 @@ public class BeanFactory {
 			// 根据方法名和属性类型获取这个方法
 			Method setMethod = instance.getClass().getDeclaredMethod(setMethodName, property.getType());
 			try{
-				// 普通数据类型直接配置，只支持String
 				setMethod.invoke(instance, propertyMap.get(propertyName));
 			}catch(Exception e){
 				// 属性为对象，要先从beanFactory里获取这个对象再注入

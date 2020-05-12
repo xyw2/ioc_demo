@@ -5,7 +5,7 @@ public class Student {
 	private String name;
 
 	private String sex;
-	
+
 	private Teacher teacher;
 
 	public String getName() {

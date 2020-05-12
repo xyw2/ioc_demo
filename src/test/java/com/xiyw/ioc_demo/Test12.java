@@ -18,9 +18,7 @@ public class Test12 {
 	 */
 	public static void main(String[] args) {
 		ApplicationContext ac = new AnnotationConfigApplicationContext(ApplicationConfig12.class);
-		DBUtils12 dBUtils12 = (DBUtils12) ac.getBean(DBUtils12.class);
 		Environment environment = ac.getEnvironment();
-		dBUtils12.setDriver(environment.getProperty("db.driverClass"));
 		System.out.println("environment.getProperty('db.driverClass')=" + environment.getProperty("db.driverClass"));
 	}
 
