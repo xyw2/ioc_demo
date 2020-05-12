@@ -18,7 +18,7 @@ public class DBUtils12 {
 	private String account;
 	
 	@Value("${db.password}")
-	private String password="123";
+	private String password;
 	
 	@PostConstruct
 	public void init(){
